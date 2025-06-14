@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+h3{ 
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+h4{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+h5{
+    font-size: 1rem;
+    font-weight: 600;
+}
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: rgb(6, 4, 20);
+    color: aliceblue;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(16, 11, 56);
+}
+.navbar{
+    font-size: 16px;
+    top: 0;
+    left: 0;
+}
+.navbar .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: black;
+    transition: 0.3s ease;
+}
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active{
+    color: coral;
+}
+#home span {
+    color: chocolate;
+
+}
+#home{
+    background-image:url('images/pexels-jmendezrf-1536619.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ 
+}
+#new .one img {
+    width: 100%;
+    height: 70%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#new .one .details{
+     position: absolute;
+     width: 100%;
+     height: 70%;
+     top: 0;
+     left: 0;
+     transition: 0.3s ease;
+}
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(139, 87, 53, 0.7);
+}
+#new .one:hover .details button{
+display: inline-block;
+font-size: 14px;
+font-weight: 500;
+color: rgb(17, 14, 14);
+background: none;
+text-transform: uppercase;
+border-bottom: 1px solid rgb(15, 11, 11);
+padding: 2.5px;
+transform: translateY(70px);
+transition: 0.3s ease;
+
+}
+#new .one:hover .details button:hover{
+    color: rgb(228, 238, 247);
+    border-bottom: 1px solid rgb(233, 225, 210);
+}
+#new .one:nth-child(1) .details{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: flex-start;
+text-align: start;
+}
+#new .one:nth-child(2) .details{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+#new .one:nth-child(3) .details{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: flex-end;
+text-align: right;
+}
+/*products*/
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.product img{
+    transition: 0.3s all;
+}
+.product:hover img{
+    opacity: 0.7;
+}
+.product .buy-btn{
+    background: rgb(197, 70, 24);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+
+}
+.product:hover .buy-btn{
+    
+    transform: translateY(0);
+    opacity: 1;
+}
+hr{
+    width: 30px;
+    height: 2px;
+    background: rgb(240, 70, 8);
+}
+#banner{
+    background-image:url('images/pexels-olly-3775120.jpg');
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#banner button{
+    background: rgb(199, 53, 0);
+}
